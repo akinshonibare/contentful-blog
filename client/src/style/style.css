@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #d3d3d3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 900px) {
+  .blogposts {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .blogposts {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.paper {
+  position: relative;
+  margin: 5% auto;
+  width: 85%;
+
+  transition: 0.8s ease;
+  background: white;
+  text-align: center;
+}
+
+.paper:hover {
+  transform: translateY(-10px);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.poster {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 2vh;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #d3d3d3;
+  letter-spacing: 1px;
+  margin: 2vh 4vw;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #1f2833;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+hr {
+  width: 70%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: 0;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+p {
+  margin: 2vh 3.5vw;
+  text-align: left;
+  padding-bottom: 1vh;
+  color: #a0a6ab;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1f2833;
+}
