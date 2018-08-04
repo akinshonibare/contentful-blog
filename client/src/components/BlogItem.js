@@ -11,7 +11,7 @@ class BlogItem extends Component {
   renderPosts() {
     return this.props.posts.map((post, index) => {
       return (
-        <div class="paper">
+        <div className="paper" key={post.fields.id}>
           <div>
             <img src={post.fields.imgUrl} alt="" />
           </div>

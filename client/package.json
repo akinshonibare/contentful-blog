@@ -7,6 +7,7 @@
     "contentful": "^6.1.2",
     "dotenv": "^6.0.0",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
     "react-markdown": "^3.4.1",
     "react-materialize": "^2.3.3",
@@ -17,7 +18,8 @@
     "redux": "^4.0.0",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,21 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { fetchPosts } from 'actions';
+import React from 'react';
 
 import * as Markdown from 'react-markdown';
 
-class BlogPost extends Component {
-  render() {
-    return <div />;
-  }
-}
+const BlogPost = props => (
+  <div>
+    <h1>{props.location.state.post.fields.title}</h1>
+  </div>
+);
 
-function mapStateToProps(state) {
-  return { posts: state.posts.all };
-}
-
-export default connect(
-  mapStateToProps,
-  { fetchPosts }
-)(BlogPost);
+export default BlogPost;
